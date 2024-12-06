@@ -100,7 +100,7 @@ section {
 	padding: 20px 0px;
 	top: 0;
 	left: 0;
-	font-size: 20px;
+	font-size: 25px;
 	font-weight: bold;
 	font-family: 'sonsieone';
 	display: flex;
@@ -116,7 +116,7 @@ body.dark #sidebar .brand {
 
 #sidebar .brand bn {
 	color: var(--red);
-	font-size: 20px;
+	font-size: 15px;
 	font-family: var(--solaiman-lipi);
 }
 
@@ -209,10 +209,15 @@ body.dark #sidebar .brand bn {
 #sidebar .side-menu li a.profile {
 	background-color: var(--white);
 	color: var(--red);
-	margin-top: 150px;
-	font-size: 13px;
+	margin-top: 215px;
+	font-size: 15px;
 	font-weight: bold;
 	border-radius: 0px;
+}
+
+body.dark #sidebar .side-menu li a.profile {
+	background-color: var(--dark);
+	color: var(--red)
 }
 
 
@@ -231,6 +236,10 @@ body.dark #sidebar .brand bn {
 	position: relative;
 	overflow: hidden;
 	text-shadow: 0 2px 4px rgba(0,0,0,0.5);
+}
+
+body.dark .rainbow-text {
+	background-color: var(--dark);
 }
 
 .rainbow-text::before {
@@ -366,7 +375,7 @@ body.dark #content nav form .form-input {
 	width: 100%;
 	height: 100%;
 	padding: 0 10px;
-	font-size: 30px;
+	font-size: 20px;
 	font-weight: bold;
 	font-family: var(--solaiman-lipi), var(--times);
 	outline: none;
@@ -458,10 +467,10 @@ body.dark #content nav form .form-input button {
 
 
 
-/*================================================== MAIN Content ==================================================*/
+/*================================================== MAIN CONTENT ==================================================*/
 #content main {
 	width: 100%;
-	padding: 30px 10px;
+	padding: 30px 3px;
 	font-family: var(--solaiman-lipi);
 	max-height: calc(100vh - 56px);
 	overflow-y: auto;
@@ -471,10 +480,10 @@ body.dark #content nav form .form-input button {
 
 
 
-/*================================== Scroll Bar ==================================*/
+/*================================== MAIN SCROLL BAR==================================*/
   
 #content main::-webkit-scrollbar {
-	width: 10px;
+	width: 2px;
 	height: 5px;
 }
   
@@ -651,7 +660,7 @@ body.dark .cardBox .card .iconBx img:hover {
 
 
 
-/*================================== Force TablE ==================================*/
+/*================================== FORCE TABLE ==================================*/
 
 #content main .table-data {
 	width: 100%;
@@ -665,7 +674,7 @@ body.dark .cardBox .card .iconBx img:hover {
 #content main .table-data .order {
 	background: var(--white);
 	width: 100%;
-	padding: 10px;
+	padding: 5px;
 	border-radius: 20px;
 }
 
@@ -704,7 +713,7 @@ body.dark .cardBox .card .iconBx img:hover {
 
 
   
-/*===================================== Force Table Body =========================================*/
+/*===================================== FORCE TABLE BODY =========================================*/
 
   
 #content main .table-data .order {
@@ -810,6 +819,7 @@ body.dark #advance-table tbody tr:nth-child(even) {
 #advance-table table, tbody td {
 	padding: 10px;
 	font-size: 20px;
+	font-weight: bold;
 	font-family: 'solaiman-lipi';
 	text-align: center;
 	transition: .2s ease-in-out .5s;
@@ -841,7 +851,6 @@ body.dark #advance-table td:first-child:before {
 td img {
 	width: 36px;
 	height: 36px;
-	margin-right: 10px;
 	box-shadow: 2px 2px 5px Red, -2px -2px 5px Green;
 	border-radius: 50%;
 	vertical-align: middle;
@@ -890,7 +899,7 @@ body.dark tbody tr td sup {
 
 
 
-/*================================== Tooltip Image ==================================*/
+/*================================== TOOLTIP IMAGE ==================================*/
 
 .tooltip {
 	margin-right: 20px;
@@ -949,10 +958,10 @@ body.dark tbody tr td sup {
 
 
 
-/*================================== Scroll Bar ==================================*/
+/*================================== FORCE SCROLL BAR ==================================*/
   
 .table-data .order .force-table-box::-webkit-scrollbar {
-	width: 5px;
+	width: 2px;
 	height: 5px;
 }
   
@@ -983,7 +992,7 @@ body.dark tbody tr td sup {
 /* ============================================= OFFISAR LIST ============================================= */
 .todo {
 	background-color: var(--white);
-	padding: 10px;
+	padding: 5px;
 	border: 2px solid var(--green);
 	border-radius: 20px;
 }
@@ -1006,7 +1015,7 @@ body.dark .todo .head h3 {
 	background: var(--white);
 	width: 100%;
 	height: 500px;
-	padding: 5px;
+	padding: 0px;
 	position: relative;
 	display: grid;
 	overflow-y: scroll;
@@ -1106,10 +1115,10 @@ body.dark .offisar-table td:first-child:before {
 
 
 
-/*================================== Scroll Bar ==================================*/
+/*================================== OFFISAR SCROLL BAR ==================================*/
   
 .offisar-table-box::-webkit-scrollbar {
-	width: 5px;
+	width: 2px;
 	height: 5px;
 }
   
@@ -1419,6 +1428,18 @@ body.dark .footer {
 		width: calc(100% - 0px);
 		left: 0px;
 	}
+	
+	#sidebar .brand {
+	  font-size: 15px;
+	}
+	
+	#sidebar .brand bn {
+	  font-size: 15px;
+	}
+	
+	#sidebar .side-menu li a.profile {
+	  font-size: 10px;
+  }
 
 
 	/*================================ Search input =================================*/
@@ -1487,6 +1508,10 @@ body.dark .footer {
 	    color: var();
 	    display: block;
 	}
+	
+	
+	
+/*============================ FORCE TABLE =================================*/
   
 	#content main .table-data .head {
 		min-width: px;
@@ -1495,6 +1520,19 @@ body.dark .footer {
 	#content main .table-data .order table {
 		width: 100%;
 	}
+	
+	#advance-table table, thead th {
+	  font-size: 15px;
+	}
+	
+	#advance-table table, tbody td {
+	font-size: 10px;
+	}
+	
+	tbody tr td sup {
+	font-size: 5px;
+	}
+/*================================ OFFICER TABIEL =================================*/
 
 	#content main .table-data .todo {
 		width: 100%;
