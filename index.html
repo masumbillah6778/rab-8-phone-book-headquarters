@@ -1,0 +1,761 @@
+<!-- ====================================================
+Android Application
+Name:        Rab 8 Phone Book Headquarters - 2025
+Author :     https://masumbillah6778bd.blogspot.com
+License:     Free Version
+Version:     1.0
+Published:   01 jun 2025
+==================================================== -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="assets/css/style.css">
+
+	<title> Rab-8-2026 </title>
+</head>
+<body>
+
+
+<!--====================================== SIDEBAR ======================================-->
+	<section id="sidebar">
+		<a href="#" class="brand">
+			<i class='bx bxs-smile'></i>
+			<span class="text"> RAB - 8 <br /> <bn> [ সদর ] </bn> </span>
+		</a>
+		<ul class="side-menu top">
+			<li class="active">
+				<a href="#">
+					<i class='bx bxs-dashboard'></i>
+					<span class="text"> Dashboard </span>
+				</a>
+			</li>
+
+			<li>
+				<a href="#">
+					<i class='bx bxs-group'></i>
+					<span class="text"> Customers </span>
+				</a>
+			</li>
+
+			<li>
+				<a href="#">
+					<i class='bx bxl-messenger'></i>
+					<span class="text"> Messenger </span>
+				</a>
+			</li>
+
+			<li>
+				<a href="https://masumbillah6778bd.blogspot.com/2024/08/rab-8-phone-book.html" target="_blank">
+					<i class='bx bxs-cloud-download'></i>
+					<span class="text"> Update </span>
+				</a>
+			</li>
+
+			<li>
+				<a href="https://masumbillah6778.github.io/rab_8_Barisal_phone-book/" target="_blank">
+					<i class='bx bxl-chrome'></i>
+					<span class="text"> Web View </span>
+				</a>
+			</li>
+
+			<li>
+				<a href="#">
+					<i class='bx bxs-cog'></i>
+					<span class="text"> Settings </span>
+				</a>
+			</li>
+		</ul>
+
+		<ul class="side-menu">
+			<li>
+				<a href="#" class="profile">
+					<i class='bx bx-user'></i>
+					<span class="rainbow-text"> Md. Masum Billah 6778 </span>
+				</a>
+			</li>
+		</ul>
+	</section>
+	<!-- SIDEBAR -->
+
+
+
+	<!-- CONTENT -->
+	<section id="content">
+<!-- ============================================= Top Menu ============================================= -->
+		<nav>
+			<i class='bx bx-menu' ></i>
+			<form action="#">
+				<div class="form-input">
+					<input type="text" required="" id="myInput" onkeyup="filterTable()">
+					<button type="submit" class="search-btn"><i class='bx bx-search' ></i></button>
+				</div>
+			</form>
+			<input type="checkbox" id="switch-mode" hidden>
+			<label for="switch-mode" class="switch-mode"></label>
+			<!--<a href="#" class="notification">
+				<i class='bx bxs-bell' ></i>
+				<span class="num">8</span>
+			</a>-->
+			<a href="#" class="profile">
+				<img src="res/drawable/images/logo.png">
+			</a>
+		</nav>
+		<!-- NAVBAR -->
+
+		<!-- MAIN -->
+		<main>
+
+<!-- ============================================= EMARINCI NUMBR ============================================= -->
+			<div class="head-title">
+				<div class="left">
+					<h1> জরুরি মোবাইল / ফোন নাম্বার</h1>
+				</div>
+			</div>
+
+			<div class="cardBox">
+				<div class="card">
+					<div>
+						<div class="cardName"> কন্ট্রোল রুম </div>
+						<div class="numbers"> র‍্যাব - ৮ বরিশাল সদর </div>
+					</div>
+					<div class="iconBx">
+						<a href="tel:01777-710899">
+							<img src="res/drawable/icons/call.png" alt="">
+						</a>
+					</div>
+				</div>
+				
+				<div class="card">
+					<div>
+						<div class="cardName"> ফায়ার সার্ভিস </div>
+						<div class="numbers"> রুপাতলী, বরিশাল </div>
+					</div>
+					<div class="iconBx">
+						<a href="tel:02478865149">
+							<img src="res/drawable/icons/call.png" alt="">
+						</a>
+					</div>
+				</div>
+				
+				<div class="card">
+					<div>
+						<div class="cardName"> বিদ্যুৎ অফিস </div>
+						<div class="numbers"> রুপাতলী, বরিশাল </div>
+					</div>
+					<div class="iconBx">
+						<a href="tel:02478871724">
+							<img src="res/drawable/icons/call.png" alt="">
+						</a>
+					</div>
+				</div>
+				
+				<div class="card">
+					<div>
+						<div class="cardName"> RP গেট </div>
+						<div class="numbers"> র‍্যাব - ৮ বরিশাল সদর </div>
+					</div>
+					<div class="iconBx">
+						<a href="tel:01777-710876">
+							<img src="res/drawable/icons/call.png" alt="">
+						</a>
+					</div>
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+<!-- ============================================= ফোর্স ও ডিএডি স্যারদের ফোন নাম্বার ============================================= -->
+
+			<div class="table-data">
+				<div class="order">
+					<div class="head">
+						<h3> ফোর্স ও ডিএডি স্যারদের ফোন নাম্বার </h3>
+					</div>
+					<div class="force-table-box">
+					<table id="advance-table">
+					<thead>
+						<tr class="head-sticky">
+						  <th colspan="4"> ডিএডি স্যারদের ফোন নাম্বার - ১৫ জন </th>
+						</tr>
+						<tr class="sticky">
+							  <th width="10%"> নং </th>
+							  <th width="20%"> পদবী </th>
+							  <th width="50%"> নাম </th>
+							  <th width="20%"> Call </th>
+							</tr>
+						  </thead>
+					  
+						  <tbody>
+							<tr>
+							  <td> </td>
+							  <td> DAD </td>
+							  <td class="tooltip top"> আঃ মুকিত <sup> [ ব্যাটালিয়ান DAD ] </sup><span class="tooltiptext"> <img src="res/drawable/Images/logo.png" alt="Image"> </span> </td>
+							  <td><span class="status delivered">
+								<a href="tel:01754-604359">
+									<img src="res/drawable/icons/call.png" alt="">
+								</a>
+							  </td>
+							</tr>
+					  
+							<tr>
+							  <td> </td>
+							  <td> DAD </td>
+							  <td> শাহাদাৎ হোসেন<sup> [ হেড ক্লার্ক ] </sup> </td>
+							  <td><span class="status delivered">
+								<a href="tel:01754-604359">
+									<img src="res/drawable/icons/call.png" alt="">
+								</a>
+							  </td>
+							</tr>
+					  
+							<tr>
+							  <td> </td>
+							  <td> DAD </td>
+							  <td> মনিরুল ইসলাম <sup> [ সদর DAD ] </sup></td>
+							  <td><span class="status delivered">
+								<a href="tel:01754-604359">
+									<img src="res/drawable/icons/call.png" alt="">
+								</a>
+							  </td>
+							</tr>
+				  
+							<tr>
+							  <td> </td>
+							  <td> DAD </td>
+							  <td> কামরুজ্জামান </td>
+							  <td><span class="status delivered">
+								<a href="tel:01754-604359">
+									<img src="res/drawable/icons/call.png" alt="">
+								</a>
+							  </td>
+							</tr>
+					  
+							<tr>
+							  <td> </td>
+							  <td> DAD </td>
+							  <td> লিটন মিয়া <sup> [ MT DAD ] </sup> </td>
+							  <td><span class="status delivered">
+								<a href="tel:01754-604359">
+									<img src="res/drawable/icons/call.png" alt="">
+								</a>
+							  </td>
+							</tr>
+				  
+							<tr>
+							  <td> </td>
+							  <td> DAD </td>
+							  <td> মকলেছুর রহমান </td>
+							  <td><span class="status delivered">
+								<a href="tel:01754-604359">
+									<img src="res/drawable/icons/call.png" alt="">
+								</a>
+							  </td>
+							</tr>
+					  
+							<tr>
+							  <td> </td>
+							  <td> DAD </td>
+							  <td> মাহমুদুর রহমান</td>
+							  <td><span class="status delivered">
+								<a href="tel:01754-604359">
+									<img src="res/drawable/icons/call.png" alt="">
+								</a>
+							  </td>
+							</tr>
+							
+							<tr>
+							  <td> </td>
+							  <td> DAD </td>
+							  <td> সুমন বিশ্বাস </td>
+							  <td><span class="status delivered">
+								<a href="tel:01754-604359">
+									<img src="res/drawable/icons/call.png" alt="">
+								</a>
+							  </td>
+							</tr>
+							  
+							<tr>
+							  <td> </td>
+							  <td> NKS </td>
+							  <td> কাজী নজরুল </td>
+							  <td><span class="status delivered">
+								<a href="tel:01754-604359">
+									<img src="res/drawable/icons/call.png" alt="">
+								</a>
+							  </td>
+							</tr>
+							
+							<tr>
+							  <td> </td>
+							  <td> NKS </td>
+							  <td> এনায়েত হোসেন </td>
+							  <td><span class="status delivered">
+								<a href="tel:01754-604359">
+									<img src="res/drawable/icons/call.png" alt="">
+								</a>
+							  </td>
+							</tr>
+							
+							<tr>
+							  <td> </td>
+							  <td> DAD </td>
+							  <td> রেজাউল ইসলাম <sup> [ FS DAD ] </sup></td>
+							  <td><span class="status delivered">
+								<a href="tel:01754-604359">
+									<img src="res/drawable/icons/call.png" alt="">
+								</a>
+							  </td>
+							</tr>
+							
+							<tr>
+							  <td> </td>
+							  <td> DAD </td>
+							  <td> জিয়াউর রহমান </td>
+							  <td><span class="status delivered">
+								<a href="tel:01754-604359">
+									<img src="res/drawable/icons/call.png" alt="">
+								</a>
+							  </td>
+							</tr>
+							
+							<tr>
+							  <td> </td>
+							  <td> DAD </td>
+							  <td> সেলিম রেজা <sup> [ মেস DAD ] </sup> </td>
+							  <td><span class="status delivered">
+								<a href="tel:01754-604359">
+									<img src="res/drawable/icons/call.png" alt="">
+								</a>
+							  </td>
+							</tr>
+							
+							<tr>
+							  <td> </td>
+							  <td> DAD </td>
+							  <td> এজাজ হোসেন </td>
+							  <td><span class="status delivered">
+								<a href="tel:01754-604359">
+									<img src="res/drawable/icons/call.png" alt="">
+								</a>
+							  </td>
+							</tr>
+							
+							<tr>
+							  <td> </td>
+							  <td> NKS </td>
+							  <td> বাবুল হোসেন </td>
+							  <td><span class="status delivered">
+								<a href="tel:01754-604359">
+									<img src="res/drawable/icons/call.png" alt="">
+								</a>
+							  </td>
+							</tr>
+						  </tbody>
+						  
+
+
+
+
+
+
+
+
+
+						  <thead>
+							<tr class="head-sticky">
+							  <th colspan="4"> এসআই স্যারদের ফোন নাম্বার - ১৪ জন </th>
+							</tr>
+							<tr class="sticky">
+							  <th> নং </th>
+							  <th> পদবী </th>
+							  <th> নাম </th>
+							  <th> Call </th>
+							</tr>
+						  </thead>
+					  
+						  <tbody>
+							<tr>
+							  <td> </td>
+							  <td> SI </td>
+							  <td class="tooltip top"> আমিনুল ইসলাম   <sup> BSI </sup><span class="tooltiptext"> <img src="res/drawable/Images/logo.png" alt="Image"> </span> </td>
+							  <td><span class="status delivered">
+								<a href="tel:01754-604359">
+									<img src="res/drawable/icons/call.png" alt="">
+								</a>
+							  </td>
+							</tr>
+					  
+							<tr>
+							  <td> </td>
+							  <td> SGT </td>
+							  <td> লিটু <sup> [ CSI ]</sup> </td>
+							  <td><span class="status delivered">
+								<a href="tel:01754-604359">
+									<img src="res/drawable/icons/call.png" alt="">
+								</a>
+							  </td>
+							</tr>
+						  </tbody>
+						  
+
+
+
+
+
+
+
+
+
+
+						  <thead>
+							<tr class="head-sticky">
+							  <th colspan="4"> এএসআই স্যারদের ফোন নাম্বার - ১৪ জন </th>
+							</tr>
+							<tr class="sticky">
+							  <th> নং </th>
+							  <th> পদবী </th>
+							  <th> নাম </th>
+							  <th> Call </th>
+							</tr>
+						  </thead>
+					  
+						  <tbody>
+							<tr>
+							  <td> </td>
+							  <td> ASI </td>
+							  <td class="tooltip top"> আঃ কাদের <sup> [ Daly ] </sup> <span class="tooltiptext"> <img src="res/drawable/Images/logo.png" alt="Image"> </span> </td>
+							  <td><span class="status delivered">
+								<a href="tel:01754-604359">
+									<img src="res/drawable/icons/call.png" alt="">
+								</a>
+							  </td>
+							</tr>
+
+							<tr>
+								<td> </td>
+								<td> LCPL </td>
+								<td class="tooltip top"> মাসুম  <sup> [ Daly ] </sup> <span class="tooltiptext"> <img src="res/drawable/Images/logo.png" alt="Image"> </span> </td>
+								<td><span class="status delivered">
+								  <a href="tel:01754-604359">
+									  <img src="res/drawable/icons/call.png" alt="">
+								  </a>
+								</td>
+							  </tr>
+						  </tbody>
+						  
+
+
+
+
+
+
+
+
+
+
+
+						  <thead>
+							<tr class="head-sticky">
+							  <th colspan="4"> নায়েক স্যারদের ফোন নাম্বার - ১৪ জন </th>
+							</tr>
+							<tr class="sticky">
+							  <th> নং </th>
+							  <th> পদবী </th>
+							  <th> নাম </th>
+							  <th> Call </th>
+							</tr>
+						  </thead>
+					  
+						  <tbody>
+							<tr>
+							  <td> </td>
+							  <td> NK </td>
+							  <td class="tooltip top"> নাজমুল হোসেন <span class="tooltiptext"> <img src="res/drawable/Images/logo.png" alt="Image"> </span> </td>
+							  <td><span class="status delivered">
+								<a href="tel:01754-604359">
+									<img src="res/drawable/icons/call.png" alt="">
+								</a>
+							  </td>
+							</tr>
+						  </tbody>
+						  
+
+
+
+
+
+
+
+
+
+
+
+
+						  <thead>
+							<tr class="head-sticky">
+							  <th colspan="4"> কনস্টেবল স্যারদের ফোন নাম্বার - ১৪ জন </th>
+							</tr>
+							<tr class="sticky">
+							  <th> নং </th>
+							  <th> পদবী </th>
+							  <th> নাম </th>
+							  <th> Call </th>
+							</tr>
+						  </thead>
+					  
+						  <tbody>
+							<tr>
+							  <td> </td>
+							  <td> CON </td>
+							  <td class="tooltip top"> মাসুম বিল্লাহ <span class="tooltiptext"> <img src="https://github.com/masumbillah6778/images/raw/main/masum.jpg" alt="Image"> </span> </td>
+							  <td><span class="status delivered">
+								<a href="tel:01754-604359">
+									<img src="res/drawable/icons/call.png" alt="">
+								</a>
+							  </td>
+							</tr>
+						  </tbody>
+						</table>
+					</div>
+				</div>
+
+
+
+
+
+
+
+
+<!-- ============================================= অফিসারদের ফোন নাম্বার ============================================= -->
+
+				<div class="todo">
+					<div class="head">
+						<h3> অফিসারদের ফোন নাম্বার </h3>
+					</div>
+
+					<div class="offisar-table-box">
+					<table  class="offisar-table" border="1">
+                        <thead>
+							<tr>
+								<th whidt="10%"> নং </th>
+								<th whidt="10%"> ছবি </th>
+								<th whidt="70%"> পদবী ও নাম </th>
+								<th whidt="10%"> Call </th>
+							</tr>
+						</thead>
+
+
+						<tbody>
+							<tr>
+								<td> </td>
+								<td>
+									<div class="imgBx"><img src="res/drawable/images/1.jpg" alt=""></div>
+								</td>
+								<td>
+									<h4>CO <br> <span> আরাফাত হোসাইন </span></h4>
+								</td>
+								<td>
+									<a href="tel:01754-604359" class="offisarcall">
+										<img src="res/drawable/icons/call.png" alt="">
+									</a>
+								</td>
+							</tr>
+							
+							<tr>
+								<td> </td>
+								<td>
+									<div class="imgBx"><img src="res/drawable/images/2.jpg" alt=""></div>
+								</td>
+								<td>
+									<h4> 2IC <br> <span> সোহেল রানা </span></h4>
+								</td>
+								<td>
+									<a href="tel:01754-604359" class="offisarcall">
+										<img src="res/drawable/icons/call.png" alt="">
+									</a>
+								</td>
+							</tr>
+					
+							<tr>
+								<td> </td>
+								<td>
+									<div class="imgBx"><img src="res/drawable/images/1.jpg" alt=""></div>
+								</td>
+								<td>
+									<h4>CO <br> <span>Italy</span></h4>
+								</td>
+								<td>
+									<a href="tel:01754-604359" class="offisarcall">
+										<img src="res/drawable/icons/call.png" alt="">
+									</a>
+								</td>
+							</tr>
+					
+							<tr>
+								<td> </td>
+								<td>
+									<div class="imgBx"><img src="res/drawable/images/2.jpg" alt=""></div>
+								</td>
+								<td>
+									<h4>CO <br> <span>Italy</span></h4>
+								</td>
+								<td>
+									<a href="tel:01754-604359" class="offisarcall">
+										<img src="res/drawable/icons/call.png" alt="">
+									</a>
+								</td>
+							</tr>
+					
+							<tr>
+								<td> </td>
+								<td>
+									<div class="imgBx"><img src="res/drawable/images/1.jpg" alt=""></div>
+								</td>
+								<td>
+									<h4>CO <br> <span>Italy</span></h4>
+								</td>
+								<td>
+									<a href="tel:01754-604359" class="offisarcall">
+										<img src="res/drawable/icons/call.png" alt="">
+									</a>
+								</td>
+							</tr>
+					
+							<tr>
+								<td> </td>
+								<td>
+									<div class="imgBx"><img src="res/drawable/images/1.jpg" alt=""></div>
+								</td>
+								<td>
+									<h4>CO <br> <span>Italy</span></h4>
+								</td>
+								<td>
+									<a href="tel:01754-604359" class="offisarcall">
+										<img src="res/drawable/icons/call.png" alt="">
+									</a>
+								</td>
+							</tr>
+					
+							<tr>
+								<td> </td>
+								<td>
+									<div class="imgBx"><img src="res/drawable/images/2.jpg" alt=""></div>
+								</td>
+								<td>
+									<h4>CO <br> <span>Italy</span></h4>
+								</td>
+								<td>
+									<a href="tel:01754-604359" class="offisarcall">
+										<img src="res/drawable/icons/call.png" alt="">
+									</a>
+								</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+					<!--<ul class="todo-list">
+						<li class="completed">
+							<p>Todo List</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+						</li>
+						<li class="completed">
+							<p>Todo List</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+						</li>
+						<li class="not-completed">
+							<p>Todo List</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+						</li>
+						<li class="completed">
+							<p>Todo List</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+						</li>
+						<li class="not-completed">
+							<p>Todo List</p>
+							<i class='bx bx-dots-vertical-rounded' ></i>
+						</li>
+					</ul>-->
+				</div>
+			</div>
+
+
+
+
+
+
+
+
+
+
+
+			<!-- ============================================= FOOTER ============================================= -->
+<div class="footer">
+    <div class="marquee">
+        <marquee direction="left" scrollamount="5"><span> যদি কোনো র‍্যাব সদস্য এই অ্যাপটির ভেতরে কোনো প্রকার ভুল পেয়ে থাকেন তাহলে দয়াকরে নিচের ৬৭৭৮ নাম্বারটিতে যোগাযোগ করুন। </span></marquee>
+    </div>
+    <hr>
+    <h2> &copy মোঃ মাসুম বিল্লাহ <a href="tel:01754-604359"> ৬৭৭৮ </a></h2>
+    <p> এই অ্যাপটির আপডেট খবর পেতে <a href="https://masumbillah6778bd.blogspot.com/2024/08/rab-8-phone-book.html"> ওয়েবসাইটি </a> ভিজিট করুন।</p>
+    <img src="res/drawable/images/bangladesh-flag.gif" class="flag"></p>
+</div>
+
+
+</div>
+</div>
+
+
+
+
+
+<!-- ============================================= AOTU MUSIC ============================================= -->
+<audio autoplay hidden>
+  <source src="res/drawable/audios/salam1.mp3" type="audio/mpeg">
+</audio>
+
+
+
+
+<!-- ============================================= FLOTING BUTTON ============================================= -->
+
+<div class="floating-container">
+  <div class="floating-button">
+    🩺</div>
+  <div class="element-container">
+
+      <a href="tel:01754-604359" class="float-element tooltip-left">
+        <img src="res/drawable/icons/call2.png" alt="" class="material-images">
+        </a>
+        
+        <a href="tel:01754-604359" class="float-element tooltip-left">
+        <img src="res/drawable/icons/ambulance.png" alt="" class="material-images">
+        </a>
+        
+        <a href="tel:01754-604359" class="float-element tooltip-left">
+        <img src="res/drawable/icons/doctor.png" alt="" class="material-images">
+        </a>
+
+  </div>
+</div>
+		</main>
+		<!-- MAIN -->
+	</section>
+	<!-- CONTENT -->
+	
+
+	<script src="assets/js/script.js"></script>
+</body>
+</html>
