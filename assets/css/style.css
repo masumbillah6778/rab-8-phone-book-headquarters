@@ -910,7 +910,7 @@ body.dark tbody tr td sup {
 	background-color: white;
 	color: #fff;
 	width: 120px;
-	margin-bottom: 10px;
+	margin-bottom: -10px;
 	padding: 5px;
 	top: 100%;
 	left: 50%;
