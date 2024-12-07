@@ -470,7 +470,7 @@ body.dark #content nav form .form-input button {
 /*================================================== MAIN CONTENT ==================================================*/
 #content main {
 	width: 100%;
-	padding: 30px 3px;
+	padding: 3px;
 	font-family: var(--solaiman-lipi);
 	max-height: calc(100vh - 56px);
 	overflow-y: auto;
