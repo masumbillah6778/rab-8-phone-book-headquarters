@@ -471,7 +471,6 @@ body.dark #content nav form .form-input button {
 #content main {
 	width: 100%;
 	padding: 3px;
-	font-family: var(--solaiman-lipi);
 	max-height: calc(100vh - 56px);
 	overflow-y: auto;
 }
@@ -480,7 +479,7 @@ body.dark #content nav form .form-input button {
 
 
 
-/*================================== MAIN SCROLL BAR==================================*/
+/*================================== MAIN SCROLL BAR ==================================*/
   
 #content main::-webkit-scrollbar {
 	width: 2px;
@@ -504,55 +503,35 @@ body.dark #content nav form .form-input button {
 
 
 #content main .head-title {
-	background-color: var(--red);
 	align-items: center;
 }
 
-#content main .head-title .left {
+#content main .head-title .company h1 {
+	background-color: var(--blue);
+	color: var(--white);
+	margin-bottom: 10px;
+	padding: 5px 10px;
+	font-size: 30px;
+	font-weight: bold;
+	font-family: 'sonsieone';
 	text-align: center;
+	display: block;
 }
 
-#content main .head-title .left h1 {
+body.dark #content main .head-title .company h1 {
+	color: var(--dark);
+}
+
+#content main .head-title .left h2 {
+	background-color: var(--red);
 	color: var(--yellow);
 	margin-bottom: 10px;
 	padding: 5px 10px;
 	font-size: 20px;
 	font-weight: bold;
+	font-family: var(--solaiman-lipi);
 	text-align: center;
 	display: block;
-}
-
-#content main .head-title .left .breadcrumb {
-	display: flex;
-	align-items: center;
-	grid-gap: 16px;
-}
-
-#content main .head-title .left .breadcrumb li {
-	color: var(--dark);
-}
-
-#content main .head-title .left .breadcrumb li a {
-	color: var(--dark-grey);
-	pointer-events: none;
-}
-
-#content main .head-title .left .breadcrumb li a.active {
-	color: var(--blue);
-	pointer-events: unset;
-}
-
-#content main .head-title .btn-download {
-	background: var(--blue);
-	color: var(--white);
-	height: 36px;
-	padding: 0 16px;
-	font-weight: 500;
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	grid-gap: 10px;
-	border-radius: 36px;
 }
 
 
