@@ -817,6 +817,15 @@ body.dark #advance-table .sticky th {
 	transition: .5s ease-in-out var(--delay), background-color 0s;
 }
 
+body.dark #advance-table tbody tr id {
+	color: var(--yellow);
+}
+
+#advance-table tbody tr id {
+	color: var(--red);
+	transition: .2s ease-in-out .5s;
+}
+
 /*#advance-table tbody tr:nth-child(odd) {
 	background-color: var(--white);
 }
@@ -1554,6 +1563,11 @@ body.dark .footer {
 	
 	#advance-table table, tbody td {
 	font-size: 10px;
+	}
+
+	#advance-table tbody tr id {
+	font-size: 8px;
+	letter-spacing: 1px;
 	}
 	
 	tbody tr td sup {
