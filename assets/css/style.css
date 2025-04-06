@@ -484,6 +484,7 @@ body.dark #content nav form .form-input button {
 #content main::-webkit-scrollbar {
 	width: 2px;
 	height: 5px;
+	cursor: pointer;
 }
   
 #content main::-webkit-scrollbar-thumb {
@@ -492,11 +493,13 @@ body.dark #content nav form .form-input button {
 	border-radius: 5px;
   }
   
-  #content main::-webkit-scrollbar-thumb { 
+#content main::-webkit-scrollbar-thumb { 
 	visibility: visible;
 }
 
-
+#content main::-webkit-scrollbar-thumb:hover { 
+	width: 10px;
+}
 
 
 
