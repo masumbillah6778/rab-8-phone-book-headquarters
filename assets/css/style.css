@@ -484,13 +484,13 @@ body.dark #content nav form .form-input button {
 #content main::-webkit-scrollbar {
 	width: 2px;
 	height: 5px;
-	cursor: pointer;
 }
   
 #content main::-webkit-scrollbar-thumb {
 	background-image: linear-gradient(to top, red,orange,yellow,green,blue,indigo,violet);
 	visibility: hidden;
 	border-radius: 5px;
+	cursor: pointer;
   }
   
 #content main::-webkit-scrollbar-thumb { 
