@@ -1227,6 +1227,7 @@ body.dark .offisar-table td:first-child:before {
 	background-image: linear-gradient(to top, red,orange,yellow,green,blue,indigo,violet);
 	visibility: hidden;
 	border-radius: 5px;
+	cursor: pointer;
   }
   
   .offisar-table-box::-webkit-scrollbar-thumb { 
