@@ -947,6 +947,50 @@ body.dark #advance-table td:first-child:before {
 	counter-increment: serial-number;
 	content: counter(row, bengali) '. ';
 }
+
+
+#army {
+	background: url(/res/drawable/images/army.jpg);
+	width: px;
+	height: 0px;
+	background-size: cover;
+}
+
+#navy {
+	background: url(/res/drawable/images/army.jpg);
+	width: 100px;
+	height: 100px;
+	background-size: cover;
+}
+
+#air {
+	background: url(/res/drawable/images/army.jpg);
+	width: 100px;
+	height: 100px;
+	background-size: cover;
+}
+
+#police {
+	background: url(/res/drawable/images/army.jpg);
+	width: 100px;
+	height: 100px;
+	background-size: cover;
+}
+
+#bgb {
+	background: url(/res/drawable/images/army.jpg);
+	width: 100px;
+	height: 100px;
+	background-size: cover;
+}
+
+#ansar {
+	background: url(/res/drawable/images/army.jpg);
+	width: 100px;
+	height: 100px;
+	background-size: cover;
+}
+
   
 td img {
 	width: 36px;
