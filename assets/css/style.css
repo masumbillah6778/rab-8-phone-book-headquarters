@@ -949,6 +949,17 @@ body.dark #advance-table td:first-child:before {
 }
 
 
+
+
+#advance-table td:nth-child(2) {
+	text-shadow: 2px 2px 5px yellow, -1px -1px 1px gold;
+
+}
+
+body.dark #advance-table td:nth-child(2) {
+	text-shadow: 2px 2px 5px Red, -1px -1px 1px Green;
+}
+
 #army {
 	background: url(https://masumbillah6778.github.io/rab-8-phone-book-headquarters/res/drawable/images/army.jpg);
 	background-size: cover;
