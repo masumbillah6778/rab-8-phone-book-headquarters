@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A web Multi Player html">
+    <meta name="title" content="Multi Player">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel='stylesheet' href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+    <link rel="stylesheet" href="https://masumbillah6778.github.io/fonts/bangla/bangla-custom-font.css">
+    <link rel="stylesheet" href="https://masumbillah6778.github.io/fonts/bangla/bangla-custom-font.css">
+    <link rel="stylesheet" href="https://masumbillah6778.github.io/css/custom-scrollbar.css">
+    <link rel="icon" type="image/x-icon" href="https://masumbillah6778.github.io/images/book.png">
+    <title> Book Shelp </title>
+    <link rel="stylesheet" href="https://masumbillah6778.github.io/master-multi-media/assets/css/main-page.css">
+    <link rel="stylesheet" href="https://masumbillah6778.github.io/master-multi-media/assets/css/main-page-media-screen-v1.css">
+    <style>
+      .rab-info {
+        background-color: rgba(0,0,0,0.5);
+        backdrop-filter: blur(5px);
+      }
+      
+      .rab-info table {
+        border: 1px solid white;
+      }
+      
+      .rab-info table#advance-table {
+        border: 1px solid red;
+        counter-reset: rowNumber;
+      }
+      
+      .rab-info table#advance-table tr {
+        border: 1px solid red;
+      }
+      
+      .rab-info table#advance-table thead tr.head-sticky {
+        background-color: red;
+        backdrop-filter: blur(5px);
+        top: 2px;
+        position: sticky;
+      }
+      
+      .rab-info table#advance-table thead tr.head-sticky th {
+        color: white;
+        padding: 10px;
+        font-family: solaiman-lipi;
+      }
+      
+      .rab-info table#advance-table thead tr.sticky {
+        background-color: blue;
+        top: 45px;
+        position: sticky;
+      }
+      
+      .rab-info table#advance-table thead tr.sticky th {
+        color: yellow;
+        font-family: solaiman-lipi;
+        padding: 5px;
+      }
+      
+      .rab-info table#advance-table tbody tr td:nth-child(4n+2) {
+        background-color: yellow;
+        color: red;
+      }
+      
+      .rab-info table#advance-table tbody tr td:nth-child(4n+3) {
+        background-color: uuu;
+      }
+      
+      .rab-info table#advance-table tbody tr td:nth-child(4n+4) {
+        background-color: uuu;
+      }
+      
+      .rab-info table#advance-table tbody tr td {
+        color: white;
+        padding: 5px;
+        font-family: solaiman-lipi;
+        white-space: nowrap;
+        border: 1px solid red;
+      }
+      
+      .rab-info table#advance-table tbody tr td:first-child::before {
+        counter-increment: rowNumber;
+        content: counter(rowNumber, bengali);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="main-content">
+      <nav>
+        <div class="nav-bar" id="elemen">
+          
+          <i class='bx bx-menu sidebarOpen' ></i>
+          <span class="logo navLogo"><a href="https://masumbillah6778.github.io/master-multi-media/index.html"> Masum Billah </a></span>
+          <div class="menu">
+            <div class="logo-toggle">
+              <span class="logo"><a href="https://masumbillah6778.github.io/master-multi-media/index.html"> Masum Billah </a></span>
+              <i class='bx bx-x siderbarClose'></i>
+            </div>
+            
+            <ul class="nav-links">
+              <li><a href="https://masumbillah6778.github.io/master-multi-media/index.html"> <i class="fa-solid fa-music"></i> Audio </a></li>
+              <li><a href="https://masumbillah6778.github.io/master-multi-media/assets/html/videos/video-player-main-page.html"> <i class="fa-solid fa-video"></i> Video </a></li>
+              <li><a href="https://masumbillah6778.github.io/master-multi-media/assets/html/imges/imges-main-page.html"> <i class="fas fa-image"></i> Image </a></li>
+              <li><a href="#" class="active"> <i class="fa-solid fa-book"></i> Book </a></li>
+              <li><a href="https://masumbillah6778.github.io/master-multi-media/assets/html/calendar/calendar-main-page.html"> <i class="fa-solid fa-calendar"></i> Calendar </a></li>
+              <li><a href="https://masumbillah6778.github.io/master-multi-media/assets/html/solar-system/solar-system.html"> <i class="fa-solid fa-earth-americas"></i> Earth </a></li>
+              <li class="admin"><a href="#"> <i class="fa-solid fa-user"></i> Masum </a></li>
+            </ul>
+          </div>
+          
+          <div class="darkLight-searchBox">
+            <div class="dark-light">
+              <i class='bx bx-moon moon'></i>
+              <i class='bx bx-sun sun'></i>
+            </div>
+            
+            <div class="searchBox">
+              <div class="searchToggle">
+                <i class='bx bx-x cancel'></i>
+                <i class='bx bx-search search'></i>
+              </div>
+              
+              <div class="search-field">
+                <input type="text" placeholder="Search...">
+                <i class='bx bx-search'></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      <main>
+        <div class="container">
+          <section class="content">
+            <div class="heading"> Book Shelp </div>
+
+            
+            <div class="main-slide-box">
+              <div class="slide-box" id="scrollbar">
+				  
+<div class="rab-info">
+  <table id="advance-table">
+    <thead>
+      <tr class="head-sticky">
+        <th colspan="4"> ঢাকা ও আশপাশের ব্যাটালিয়ন </th>
+      </tr>
+      <tr class="sticky">
+        <th width="10"> নং </th>
+        <th width="20"> নাম </th>
+        <th width="20"> অবস্থান </th>
+        <th width="50"> সংযুক্ত জেলার নাম </th>
+      </tr>
+    </thead>
+		  
+		<tbody>
+			<tr>
+				<td> </td>
+				<td id="army"> র‌্যাব- HQ <br /> </td>
+				<td> <span> উত্তরা, ঢাকা </span> </td>
+				<td> উত্তরা, জসিমউদদীন  </td>
+			</tr>
+			<tr>
+				<td> </td>
+				<td id="army"> র‌্যাব- RFTS <br /> </td>
+				<td> <span> গাজীপুর, ঢাকা </span> </td>
+				<td> গাজীপুর, পোড়াবাড়ি </td>
+			</tr>
+			
+			
+			<tr>
+				<td> </td>
+				<td id="army"> র‌্যাব- ১ <br /> </td>
+				<td> <span> উত্তরা, ঢাকা </span> </td>
+				<td> উত্তরা, গুলশান ও গাজীপুর এলাকা </td>
+			</tr>
+			
+			<tr>
+				<td> </td>
+				<td id="army"> র‌্যাব- ২ <br /> </td>
+				<td> <span> ঢাকা </span> </td>
+				<td> আগারগাঁও ও হাজারীবাগ এলাকা </td>
+			</tr>
+			
+			<tr>
+				<td> </td>
+				<td id="army"> র‌্যাব- ৩ <br /> </td>
+				<td> <span> টিকাটুলি, ঢাকা </span> </td>
+				<td> মতিঝিল, রামপুরা, শাহবাগ এলাকা </td>
+			</tr>
+			
+			<tr>
+				<td> </td>
+				<td id="army"> র‌্যাব- ৪ <br /> </td>
+				<td> <span> মিরপুর, ঢাকা </span> </td>
+				<td> মিরপুর, সাভার, মানিকগঞ্জ এলাকা </td>
+			</tr>
+			
+			<tr>
+				<td> </td>
+				<td id="army"> র‌্যাব- ১০ <br /> </td>
+				<td> <span> যাত্রাবাড়ী, ঢাকা </span> </td>
+				<td> ডেমরা, কেরানীগঞ্জ, ফরিদপুর ও রাজবাড়ী এলাকা </td>
+			</tr>
+    <tbody>
+    
+    
+    
+    
+    <thead>
+      <tr class="head-sticky">
+        <th colspan="4"> ঢাকার বাইরের ব্যাটালিয়ন </th>
+      </tr>
+    </thead>
+    
+    <tbody>
+			<tr>
+				<td> </td>
+				<td id="army"> র‌্যাব- ৫ <br /> </td>
+				<td> <span> কাশিয়ডাঙা, রাজশাহী </span> </td>
+				<td> রাজশাহী, চাঁপাইনবাবগঞ্জ, নাটোর, নওগাঁ এলাকা </td>
+			</tr>
+			
+			<tr>
+				<td> </td>
+				<td id="army"> র‌্যাব- ৬ <br /> </td>
+				<td> <span> লবনচরা, খুলনা </span> </td>
+				<td> খুলনা, বাগেরহাট, সাতক্ষীরা, যশোর এলাকা </td>
+			</tr>
+			
+			<tr>
+				<td> </td>
+				<td id="army"> র‌্যাব- ৭ <br /> </td>
+				<td> <span> পতেঙ্গা, চট্টগ্রাম </span> </td>
+				<td> চট্টগ্রাম ও বান্দরবান কক্সবাজার এলাকা </td>
+			</tr>
+			
+			<tr>
+				<td> </td>
+				<td id="army"> র‌্যাব- ৮ <br /> </td>
+				<td> <span> রুপাতলী, বরিশাল </span> </td>
+				<td> বরিশাল বিভাগ এলাকা </td>
+			</tr>
+			
+			<tr>
+				<td> </td>
+				<td id="army"> র‌্যাব- ৯ <br /> </td>
+				<td> <span> শাহপরান, সিলেট </span> </td>
+				<td> সিলেট বিভাগ এলাকা </td>
+			</tr>
+			
+			<tr>
+				<td> </td>
+				<td id="army"> র‌্যাব- ১১ <br /> </td>
+				<td> <span> আদমজী জুটমিল, সিদ্ধিরগঞ্জ, নারায়নগঞ্জ </span> </td>
+				<td> নারায়ণগঞ্জ, নরসিংদী, মুন্সিগঞ্জা এলাকা  </td>
+			</tr>
+			
+			<tr>
+				<td> </td>
+				<td id="army"> র‌্যাব- ১২ <br /> </td>
+				<td> <span> সালাঙ্গা, সিরাজগঞ্জ </span> </td>
+				<td> সিরাজগঞ্জ, পাবনা, বগুড়া, কুষ্টিয়া এলাকা  </td>
+			</tr>
+			
+			<tr>
+				<td> </td>
+				<td id="army"> র‌্যাব- ১৩ <br /> </td>
+				<td> <span> কোতোয়ালি, রংপুর </span> </td>
+				<td> রংপুর বিভাগ এলাকা  </td>
+			</tr>
+			
+			<tr>
+				<td> </td>
+				<td id="army"> র‌্যাব- ১৪ <br /> </td>
+				<td> <span> শহীদ জাহাঙ্গীর লাইন্স, ময়মনসিংহ </span> </td>
+				<td> ময়মনসিংহ, কিশোরগঞ্জ, টাঙ্গাইলগ এলাকা  </td>
+			</tr>
+			
+			<tr>
+				<td> </td>
+				<td id="army"> র‌্যাব- ১৫ <br /> </td>
+				<td> <span> কক্সবাজার সদর, কক্সবাজার </span> </td>
+				<td> কক্সবাজার ও বান্দরবান জেলা এলাকা  </td>
+			</tr>
+      
+    </tbody>
+  </table>
+</div>
+
+	</div>
+
+            </div>
+          </section>
+        </div>
+      </main>
+
+
+
+
+
+
+
+
+      <audio id="audioID">
+        <source src="https://css-tricks.com/examples/SoundOnHover/audio/beep.mp3" type="audio/mpeg">
+      </audio>
+
+      <div class="footer">
+        <marquee behavior="scroll" gap="0" truespeed="" direction="left" scrollamount="2" scrolldelay="50" onmouseover="this.stop();" onmouseout="this.start();">
+          সর্বকালের সেরা গায়কদের সেরা গানের তালিকা। ব্যক্তিগত পছন্দের ওপর নির্ভর।
+        </marquee>
+      </div>
+    </div>
+
+    <script src="https://masumbillah6778.github.io/multi-player/assets/js/hover-auto-play.js"></script>
+    <script src="https://masumbillah6778.github.io/js/toggle-dark-light.js"></script>
+
+  </body>
+</html>
